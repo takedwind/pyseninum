@@ -1,0 +1,36 @@
+17:32:47 - demo_log - DEBUG - running - func_a
+17:36:40 - demo_log - DEBUG - running - test_a
+17:36:40 - demo_log - DEBUG - running - test_b
+22:19:22 - demo_log - DEBUG - PASS - func_a(*args: tuple = *(1,), **kwargs: dict = **{'name': 'json'})
+22:20:34 - demo_log - DEBUG - PASS - test_a(*args: tuple = *(<log_decorators_test.TestA testMethod=test_a>,), **kwargs: dict = **{})
+22:20:34 - demo_log - DEBUG - PASS - test_b(*args: tuple = *(<log_decorators_test.TestA testMethod=test_b>,), **kwargs: dict = **{})
+22:41:09 - demo_log - ERROR - FAIL - test_a(*args: tuple = *(<log_decorators_test.TestA testMethod=test_a>,), **kwargs: dict = **{})
+Traceback (most recent call last):
+  File "D:\Program Files\JetBrains\imooc\chapter6\decorators.py", line 83, in wrap_func
+    func(*args, **kwargs)
+  File "D:\Program Files\JetBrains\imooc\chapter6\log_decorators_test.py", line 17, in test_a
+    assert False
+AssertionError
+22:41:09 - demo_log - DEBUG - PASS - test_b(*args: tuple = *(<log_decorators_test.TestA testMethod=test_b>,), **kwargs: dict = **{})
+22:43:23 - demo_log - ERROR - FAIL - test_a(*args: tuple = *(<log_decorators_test.TestA testMethod=test_a>,), **kwargs: dict = **{})
+Traceback (most recent call last):
+  File "D:\Program Files\JetBrains\imooc\chapter6\decorators.py", line 83, in wrap_func
+    func(*args, **kwargs)
+  File "D:\Program Files\JetBrains\imooc\chapter6\log_decorators_test.py", line 17, in test_a
+    assert False
+AssertionError
+22:43:23 - demo_log - DEBUG - PASS - test_b(*args: tuple = *(<log_decorators_test.TestA testMethod=test_b>,), **kwargs: dict = **{})
+22:44:56 - demo_log - ERROR - FAIL - func_a(*args: tuple = *(), **kwargs: dict = **{})
+Traceback (most recent call last):
+  File "D:\Program Files\JetBrains\imooc\chapter6\decorators.py", line 83, in wrap_func
+    func(*args, **kwargs)
+  File "D:/Program Files/JetBrains/imooc/chapter6/log_decorators_test.py", line 7, in func_a
+    return 1 / args.__len__(), 1 / kwargs.__len__()
+ZeroDivisionError: division by zero
+23:14:31 - demo_log - ERROR - FAIL - func_a(*args: tuple = *(), **kwargs: dict = **{})
+Traceback (most recent call last):
+  File "D:\Program Files\JetBrains\imooc\chapter6\decorators.py", line 84, in wrap_func
+    func(*args, **kwargs)
+  File "D:/Program Files/JetBrains/imooc/chapter6/log_decorators_test.py", line 7, in func_a
+    return 1 / args.__len__(), 1 / kwargs.__len__()
+ZeroDivisionError: division by zero

@@ -1,0 +1,11 @@
+element:
+  type: xpath
+  value: //div
+
+# {'element':{'type: 'xpath', 'value': '//div'}}
+
+elements:
+  - xpath
+  - //div
+
+# {'elements': ['xpath', '//div']}

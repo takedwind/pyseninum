@@ -1,0 +1,21 @@
+test_a1 (module_1_test.A) ... ok
+test_a2 (module_1_test.A) ... skipped ''
+test_b1 (module_1_test.B) ... ok
+test_b2 (module_1_test.B) ... ok
+test_c1 (module_2_test.C) ... FAIL
+test_c2 (module_2_test.C) ... ok
+test_d1 (module_2_test.D) ... ok
+test_d2 (module_2_test.D) ... ok
+
+======================================================================
+FAIL: test_c1 (module_2_test.C)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Program Files\JetBrains\imooc\chapter4\case\module_2_test.py", line 7, in test_c1
+    self.assertEqual(True, False)
+AssertionError: True != False
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.000s
+
+FAILED (failures=1, skipped=1)

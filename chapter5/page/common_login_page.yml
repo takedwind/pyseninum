@@ -1,0 +1,22 @@
+#登录账号
+username:
+  - id
+  - account
+
+#密码
+password:
+  - name
+  - password
+
+#登录按钮
+loginBtn:
+  - id
+  - submit
+
+#第一步：编写页面类对应的yaml文件
+#第二步：通过改造的页面类的IO获取指定yml文件的指定元素
+#obj.attr
+#common_login_page.yml的解析结果.username ===> cp.username  ===>
+#  构造一个方法解析cp.username
+#{'cp': common_login_page.yml路径}
+#{'username': ['id', 'account']...}

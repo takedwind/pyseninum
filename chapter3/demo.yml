@@ -1,0 +1,17 @@
+username:
+  type: id
+  value: account
+# {'username': {'type': 'id', 'value': 'account'}}
+
+password:
+  -name
+  -password
+# {'password': ['name', 'password']}
+
+user_name:
+  type: xpath
+  value: //span[@class="user-name"]
+
+bug_label:
+  -xpath
+  -//span[@class="label label-id"]
