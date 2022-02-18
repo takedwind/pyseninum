@@ -35,6 +35,12 @@ CHAPTER_2_PATH = join(BASE_PATH, 'chapter4')
 
 # 模块3路径
 CHAPTER_3_PATH = join(BASE_PATH, 'chapter5')
+
+# 元素配置文件的根目录
+ELEMENTS_YAML_FILE_PATH = join(BASE_PATH, 'chapter5/page')
+
+# 数据库配置文件路径
+DATABASE_INI_PATH = join(BASE_PATH, 'chapter8/database.ini')
 # ---------------------项目包和文件夹的路径---------------------
 
 # ---------------------测试套件---------------------
@@ -113,3 +119,24 @@ IE_ATTACH_TIMEOUT = 10000
 # ---------OPERA浏览器属性--------
 
 # ---------------------浏览器对象属性---------------------
+
+# ---------------------YAML元素配置文件---------------------
+YAML_ELEMENT = {
+    'cp': join(ELEMENTS_YAML_FILE_PATH, 'common_login_page.yml'),
+    'sp': join(ELEMENTS_YAML_FILE_PATH, 'search_page.yml')
+}
+# ---------------------YAML元素配置文件---------------------
+# print(YAML_ELEMENT)
+
+# ---------------------WEB元素定位方法---------------------
+BY_RULES = (
+    'id',
+    'xpath',
+    'link text',
+    'partial link text',
+    'name',
+    'tag name',
+    'class name',
+    'css selector'
+)
+# ---------------------WEB元素定位方法---------------------
