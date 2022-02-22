@@ -1,11 +1,12 @@
 # 继承测试
-# 测试类应该是被测页面类的子类
+# 测试类应该是被测页面的子类
 
 # 实例测试
-# 测试类应该获得被测页面类的实例
-
+# 测试类应该是获得被测页面的实例
 
 import unittest
+from time import sleep
+
 from chapter3.po_demo2 import MainPage
 
 

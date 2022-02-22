@@ -15,6 +15,8 @@ class HTTPClient:
 client = HTTPClient()
 response = client.request('GET', r'http://localhost:8080/test')
 print(response.status_code, response.text)
+
+
 from json import load
 with open(r'D:\Program Files\JetBrains\imooc\chapter7\demo.json', 'r', encoding='utf-8') as f:
     json_data = load(f)

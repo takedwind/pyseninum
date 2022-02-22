@@ -1,5 +1,0 @@
-20:08:58 - demo_log - DEBUG - PASS - test_login(*args: tuple = *(<chapter9.async_webdriver.AsyncBrowser object at 0x00000194C219C790>,), **kwargs: dict = **{})
-20:09:00 - demo_log - DEBUG - PASS - test_search(*args: tuple = *(<chapter9.async_webdriver.AsyncBrowser object at 0x00000194C219CD00>,), **kwargs: dict = **{})
-20:09:02 - demo_log - DEBUG - PASS - test_search(*args: tuple = *(<chapter9.async_webdriver.AsyncBrowser object at 0x00000194C21B8250>,), **kwargs: dict = **{})
-20:10:14 - demo_log - DEBUG - PASS - test_login(*args: tuple = *(<chapter9.async_test_cls.AsyncTestLogin object at 0x0000017CFB15C7F0>,), **kwargs: dict = **{})
-20:10:17 - demo_log - DEBUG - PASS - test_search(*args: tuple = *(<chapter9.async_test_cls.AsyncTestMain object at 0x0000017CFB15CD00>,), **kwargs: dict = **{})
